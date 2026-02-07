@@ -1,0 +1,30 @@
+
+.buttonBack {
+    height: 4.1vw;
+    width: 14vw;
+    font-size: 1.6vw;
+    border-radius: 1.1vw;
+    background-color: #E0C19E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+    transition: .3s ease;
+    
+    .buttonBack_style {
+        width: 100%;
+        height: 100%;
+        font-family: 'Acrom-Regular';
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none;   /* Konqueror HTML */
+        -moz-user-select: none;      /* Old versions of Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;
+    }
+}
+
+.buttonBack.scale_animation {
+    scale: 80%;
+}

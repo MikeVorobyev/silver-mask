@@ -1,0 +1,50 @@
+
+.aboutTheAward {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .row {
+        position: absolute;
+        display: flex;
+        gap: 5vw;
+        width: 93%;
+        // padding: 0 100px 0 100px;
+
+        .main_text_wrapper {
+            width: 78%;
+            height: 38vw;
+            padding: 4.2vw;
+            border-radius: 3.7vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Acrom-Regular';
+            background-color: #FFFFFF;
+
+            .main_text {
+                font-size: 1.1vw;
+            }
+
+            .buttonBack_wrapper {
+                position: absolute;
+                bottom: -4%;
+                left: 8%;
+            }
+        }
+
+        .img_slider_container {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            width: 29vw;
+            height: 38vw;
+            overflow: auto;
+
+            .img {
+                border-radius: 3vw;
+            }
+        }
+    }
+}

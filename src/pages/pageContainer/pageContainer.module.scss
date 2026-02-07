@@ -1,0 +1,88 @@
+
+.pageContainer {
+    position: fixed;
+    z-index: 0;
+    font-size: 10rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(49, 60, 80);
+    background-image: url(../../assets/img/clear_back_v1.png); // Первый рисунок бэкграунда
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+    display: grid;
+    grid-template-areas:
+      "aboutTheAward_page     main_page       gallery_page"
+      ".                   eventPoster_page              .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .main_back { // Второй рисунок бэкграунда
+        position: absolute;
+        z-index: 0;
+        width: 100vw;
+        opacity: 1;
+        transition: 1s ease-in-out;
+    }
+
+    .main_back.hiden_img {
+        opacity: 0;
+        transition: 1s ease-in-out;
+    }
+
+    .main_page_wrapper {
+        grid-area: main_page;
+        transform: translateX(-100vw);
+        transition: 2s ease-in-out;
+    }
+
+    .main_page_wrapper.active_left {
+        transform: translateX(-200vw);
+    }
+
+    .main_page_wrapper.active_right {
+        transform: translateX(0vw);
+    }
+
+    .main_page_wrapper.active_down {
+        transform: translateX(-100vw) translateY(-100vh);
+    }
+
+
+
+    .gallery_page_wrapper {
+        grid-area: gallery_page;
+        transform: translateX(-100vw);
+        transition: 2s ease-in-out;
+    }
+
+    .gallery_page_wrapper.active_left {
+        transform: translateX(-200vw);
+    }
+
+
+
+    .aboutTheAward_page_wrapper {
+        grid-area: aboutTheAward_page;
+        transform: translateX(-100vw);
+        transition: 2s ease-in-out;
+    }
+
+    .aboutTheAward_page_wrapper.active_right {
+        transform: translateX(0vw);
+    }
+
+
+
+    .eventPoster_page_wrapper {
+        grid-area: eventPoster_page;
+        transform: translateX(-100vw);
+        transition: 2s ease-in-out;
+    }
+
+    .eventPoster_page_wrapper.active_down {
+        transform: translateX(-100vw) translateY(-100vh);
+    }
+}

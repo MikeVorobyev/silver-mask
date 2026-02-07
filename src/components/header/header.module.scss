@@ -1,0 +1,17 @@
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 90%;
+
+    .header_logo {
+        width: 42vw;
+    }
+
+    .header_title {
+        font-family: 'Romul_Regular';
+        font-size: 4.4vw;
+    }
+}

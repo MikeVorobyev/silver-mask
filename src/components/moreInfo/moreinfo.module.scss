@@ -1,0 +1,114 @@
+
+
+.moreInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50vw;
+    font-family: 'Acrom-Regular';
+    border-radius: 3.7vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    transition: 1s ease;
+    scale: 0%;
+    transform: translateY(1000px);
+    
+
+    .moreInfo_inner {
+        margin: 3vw 0 3vw 0;
+        width: 90%;
+        height: 50vw;
+        overflow: auto;
+
+        .eventPoster__information_section {
+            font-size: 44px;
+            display: flex;
+            gap: 20px;
+            align-items: start;
+            justify-content: center;
+    
+            .eventPoster__date {
+                color: #d68d0f;
+                font-size: 2.4vw;
+                min-width: 20%;
+            }
+    
+            .eventPoster__title_and_subtitle_wrapper {
+                max-width: 55%;
+                width: 100%;
+    
+                .eventPoster__title {
+                    color: #0A0A0A;
+                    font-size: 2.6vw;
+                }
+    
+                .eventPoster__sub_title {
+                    color: #0A0A0A;
+                    font-size: 1.4vw;
+                    padding: 0 0 0 0.4vw;
+                }
+            }
+    
+            .eventPoster__duration {
+                color: #8A8A8A;
+                font-size: 1.2vw;
+                padding: 0 0.5vw 0 0.4vw;
+            }
+        }
+
+        .description_section {
+            color: #8A8A8A;
+            font-size: 1.3vw;
+            padding: 0.5vw 0.8vw 0 0.4vw;
+        }
+
+        .eventPoster__slide_section {
+            display: flex;
+            gap: 20px;
+            height: 25vw;
+            margin: 0 0.7vw 0.4vw 0.15vw;
+            overflow: auto;
+            margin: 10px 0 10px 0;
+            padding: 10px 0 10px 0;
+
+            .eventPoster__slides {
+                border-radius: 2.6vw;
+            }
+        }
+
+        .galery__title_section {
+            display: flex;
+            justify-content: end;
+            font-size: 2.6vw;
+            text-align: right;
+        }
+
+        .galery__slide_section {
+            display: flex;
+            gap: 20px;
+            height: 36vw;
+            overflow: auto;
+            margin: 10px 0 10px 0;
+            padding: 10px 0 10px 0;
+
+            .galery__slides {
+                border-radius: 2.6vw;
+            }
+        }
+
+    }
+
+    .buttonBack_wrapper {
+        position: absolute;
+        bottom: -4%;
+        left: 8%;
+    }
+}
+
+.moreInfo.visibleMoreInfo {
+    scale: 100%;
+    transform: translateY(0px);
+}

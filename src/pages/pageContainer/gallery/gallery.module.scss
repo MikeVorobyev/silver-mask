@@ -1,0 +1,21 @@
+
+.gallery {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .galleryCard_wrapper {
+        position: relative;
+        display: flex;
+        gap: 2vw;
+
+        .buttonBack_wrapper {
+            position: absolute;
+            bottom: -27%;
+            left: 3.5%;
+        }
+    }
+}

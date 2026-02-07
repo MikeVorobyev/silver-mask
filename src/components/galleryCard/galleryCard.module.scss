@@ -1,0 +1,23 @@
+
+.galleryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Acrom-Regular';
+    font-size: 1.2vw;
+    width: 20vw;
+    height: 29vw;
+    border-radius: 2.4vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    overflow: hidden;
+
+    .title {
+        padding: 3vw 3vw 0 3vw;
+        text-align: center;
+    }
+
+    .img_preview {
+        width: 20vw;
+    }
+}

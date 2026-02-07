@@ -1,0 +1,37 @@
+
+.eventPoster {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .body_wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40vw;
+        font-family: 'Acrom-Regular';
+        border-radius: 3.7vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #FFFFFF;
+
+
+        .body_inner {
+            margin: 3vw 0 3vw 0;
+            width: 90%;
+            height: 50vw;
+            overflow: auto;
+        }
+    }
+
+    .buttonBack_wrapper {
+        position: absolute;
+        bottom: -4%;
+        left: 8%;
+    }
+}

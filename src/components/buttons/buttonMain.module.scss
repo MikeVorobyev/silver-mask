@@ -1,0 +1,27 @@
+
+.buttonMain {
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.6vw;
+    transition: .3s ease;
+
+    .button_style {
+        font-weight: 600;
+        font-family: 'Acrom-Regular';
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 1.7vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none;   /* Konqueror HTML */
+        -moz-user-select: none;      /* Old versions of Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;
+    }
+}
+
+.buttonMain.scale_animation {
+    scale: 80%;
+}
