@@ -30,6 +30,7 @@ function Main() {
         resizeObserver.observe(mainRef.current)
     
         return () => resizeObserver.disconnect() // Очистка
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleClick = (text) => {

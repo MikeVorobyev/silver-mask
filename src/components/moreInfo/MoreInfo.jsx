@@ -67,10 +67,10 @@ function MoreInfo({ section }) {// galery, EventPoster
 
                         {   flag(section)
                             ?   <div className={styles.eventPoster__slide_section}>
-                                    {eventTransmission.initEvent.imgURLEvent.map((e, i)=> <img src={e} key={i} className={styles.eventPoster__slides}/>)}
+                                    {eventTransmission.initEvent.imgURLEvent.map((e, i)=> <img src={e} key={i} className={styles.eventPoster__slides} alt='eventPoster'/>)}
                                 </div>
                             :   <div className={styles.galery__slide_section}>
-                                    {eventTransmission.initEvent.imgURLEvent.map((e, i)=> <img src={e} key={i} className={styles.galery__slides}/>)}
+                                    {eventTransmission.initEvent.imgURLEvent.map((e, i)=> <img src={e} key={i} className={styles.galery__slides} alt='galery'/>)}
                                 </div>
                         }
 
