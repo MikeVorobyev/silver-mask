@@ -10,6 +10,8 @@ const street_theatricals_2025 = importAll(require.context('../../assets/img/stre
 const russian_national_theater_award_silver_mask_2025 = importAll(require.context('../../assets/img/russian_national_theater_award_silver_mask_2025', false, /\.(png|jpe?g|svg)$/))
 // ===============================================================================================
 
+console.log(require.context('../../assets/img/award_ceremony_2024', false, /\.(png|jpe?g|svg)$/).keys().map(require.context('../../assets/img/award_ceremony_2024', false, /\.(png|jpe?g|svg)$/)))
+
 const eventsGallery = [
     {
         id: `0_id-gallery-${uuidv4()}`,

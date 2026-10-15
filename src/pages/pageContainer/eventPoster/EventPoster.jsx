@@ -18,8 +18,6 @@ function EventPoster() {
     const heightMainIMG = useHeightMainIMG()
     const marginBodyWrapper = heightMainIMG.initHeight
 
-    // console.log(events)
-
     return(
         <div className={styles.eventPoster}>
             <Header headerTitle={'АФИША'}/>
@@ -38,6 +36,5 @@ function EventPoster() {
         </div>
     )
 }
-
 
 export default EventPoster
